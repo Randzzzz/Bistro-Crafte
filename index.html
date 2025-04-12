@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Crafté</title>
+    <!-- tailwind, flowbite link, and boxicon -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scrollButton.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Website Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="nav-container border-b-2 shadow-sm">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo.png" class="h-14" alt="Flowbite Logo" />
+          <span
+            class="title self-center text-3xl font-semibold whitespace-nowrap"
+            >Bistro Crafté</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-stone-800 rounded-lg md:hidden hover:bg-[#e6dace] focus:outline-none focus:ring-2 focus:ring-[#1c0d08]"
+          aria-controls="navbar-default"
+          aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#1c0d08] rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent bg-[#e6dace]">
+            <li></li>
+            <li>
+              <a
+                href="#home"
+                class="navbar-element block py-2 px-3 text-xl text-white bg-[#1c0d08] rounded-sm md:text-[#6f4323] md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="navbar-element block py-2 px-3 text-xl text-[#1c0d08] md:text-black rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-[#6f4323] md:p-0 md:dark:hover:text-[#6f4323] dark:hover:bg-[rgba(111,67,35,0.3)] md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="navbar-element block py-2 px-3 text-xl text-[#1c0d08] md:text-black rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-[#6f4323] md:p-0 md:dark:hover:text-[#6f4323] dark:hover:bg-[rgba(111,67,35,0.3)] md:dark:hover:bg-transparent"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="navbar-element block py-2 px-3 text-xl text-[#1c0d08] md:text-black rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-[#6f4323] md:p-0 md:dark:hover:text-[#6f4323] dark:hover:bg-[rgba(111,67,35,0.3)] md:dark:hover:bg-transparent"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="container max-w-full relative p-5">
+        <img src="assets/homepage.png" alt="" class="w-full h-auto" />
+
+        <div
+          class="text-container relative md:absolute md:inset-0 flex items-center justify-center">
+          <div
+            class="bg-[#e6dace] text-white p-6 md:p-16 lg:p-24 w-full max-w-5xl h-auto flex flex-col justify-start">
+            <div
+              class="title text-3xl md:text-5xl lg:text-7xl text-[#1c0d08] pb-6 md:pb-10 lg:pb-12">
+              Sip. Savor. Crafté.
+            </div>
+            <div
+              class="title-content text-justify text-lg md:text-xl lg:text-2xl text-[#1c0d08]">
+              Welcome to <strong>Bistro Crafté</strong>
+              <span class="italic text-md"
+                >(pronounced <strong>"Kraff-TAY"</strong>, rhyming with
+                "Café")</span
+              >
+              — your cozy neighborhood spot for more than just great coffee.
+              From artisan pasta dishes to rich cheesecakes and freshly baked
+              muffins, we serve handcrafted comfort with every bite and sip.
+              Whether you're here for a quick espresso or a full indulgent meal,
+              you're always in good company.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about py-16 px-6 md:px-20" id="about">
+      <div
+        class="container max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-40">
+        <div class="left-container w-full md:w-1/2">
+          <img src="assets/about.png" class="w-full h-auto" />
+        </div>
+        <div class="right-container w-full md:w-1/2">
+          <div class="title text-5xl pb-6 text-[#1c0d08]">About Us</div>
+          <div class="content">
+            <p class="text-lg text-justify pb-4 text-[#1c0d08]">
+              It all started with a simple love for coffee and connection. In a
+              small kitchen filled with the aroma of freshly ground beans and
+              warm pastries, the idea for Bistro Crafté began to take shape—a
+              dream to create a space where quality and comfort come together.
+            </p>
+            <p class="text-lg text-justify pb-4 text-[#1c0d08]">
+              In 2015, that dream became reality. We opened our doors with a
+              single mission to serve handcrafted food and drinks that bring
+              people together. Starting with just a few signature coffees and a
+              couple of home-style baked goods, our menu has since grown to
+              include savory pasta, decadent cheesecakes, and classic tea each
+              made with the same care and creativity as day one.
+            </p>
+            <p class="text-lg text-justify text-[#1c0d08]">
+              Today, Bistro Crafté is more than just a café. A place where
+              friends meet, stories are shared, and every visit feels a little
+              like coming home. And while we've grown, our heart remains the
+              same craft every dish, every drink, and every moment with
+              intention.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- goals section -->
+    <section class="goals p-5">
+      <div
+        class="goals-container w-full min-h-screen flex flex-col justify-center items-center gap-16 px-12 py-24 mx-auto">
+        <!-- Background overlay -->
+
+        <!-- Mission & Vision Cards -->
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-16 z-10">
+          <div
+            class="mission text-center p-12 rounded-3xl w-[28rem] h-[22rem] flex flex-col justify-start bg-[#e6dace] hover:bg-white">
+            <div class="title text-[#1c0d08] font-semibold text-4xl pb-4">
+              Mission
+            </div>
+            <div class="text text-[#1c0d08] text-xl text-justify">
+              At Bistro Crafté, we craft every coffee, pasta, and dessert with
+              passion and precision. We pair rich, flavorful brews with freshly
+              made meals to deliver a truly satisfying experience. Our mission
+              is to serve with heart, making every visit personal, warm, and
+              memorable.
+            </div>
+          </div>
+          <div
+            class="vision text-center p-12 rounded-3xl w-[28rem] h-[22rem] flex flex-col justify-start bg-[#e6dace] hover:bg-white">
+            <div class="title text-[#1c0d08] font-semibold text-4xl pb-4">
+              Vision
+            </div>
+            <div class="text text-[#1c0d08] text-xl text-justify">
+              We envision Bistro Crafté as a cozy haven where artisan coffee
+              meets handcrafted comfort food. Our goal is to create meaningful
+              moments over every cup and plate. We strive to be a go-to space
+              where people connect, relax, and feel at home.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product overview -->
+    <section class="overview w-full flex justify-center items-center py-16">
+      <div
+        class="container max-w-8xl grid grid-rows-1 grid-cols-1 md:grid-rows-3 md:grid-cols-3 gap-5 w-full">
+        <!-- item 1 -->
+        <div class="item-container row-span-2 w-full h-full">
+          <img
+            src="assets/productOverview/product-3.png"
+            alt=""
+            class="w-full h-full object-cover" />
+        </div>
+        <!-- item 2 -->
+        <div
+          class="item-container bg-[#e6dace] w-full h-full p-20 flex items-center justify-center">
+          <div class="text-title text-7xl text-[#1c0d08]">Our Product</div>
+        </div>
+        <!-- item 3 -->
+        <div class="item-container row-span-2 bg-[#e6dace] w-full h-full p-16">
+          <div class="text text-2xl text-justify text-[#1c0d08]">
+            Indulge in our signature <strong>Crafté Brew</strong>, a rich and
+            aromatic coffee crafted with the finest beans, delivering a smooth
+            and bold flavor that keeps our customers coming back for more. Pair
+            it with our Blueberry Cheesecake, a creamy, decadent dessert with a
+            perfect balance of sweetness and tang, made with fresh blueberries
+            and a buttery crust. These customer favorites are the heart of
+            Bistro Crafté, offering the perfect blend of comfort and indulgence
+            in every bite and sip.
+          </div>
+        </div>
+        <!-- item 4 -->
+        <div class="item-container row-span-2 w-full h-full">
+          <img
+            src="assets/productOverview/product-2.png"
+            alt=""
+            class="w-full h-full object-cover" />
+        </div>
+        <!-- item 5 -->
+        <div class="item-container bg-[#1c0d08] w-full h-full p-20">
+          <div class="text-menu text-white text-3xl">
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc pl-5">
+              <li>Signature</li>
+              <li>Muffins</li>
+              <li>Tea</li>
+              <li>Non Coffee</li>
+              <li>Pasta</li>
+              <li>Etc</li>
+            </ul>
+          </div>
+        </div>
+        <!-- item 6 -->
+        <div class="item-container w-full h-full">
+          <img
+            src="assets/productOverview/product-1.png"
+            alt=""
+            class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- menu preview section -->
+    <section class="preview p-5 text-white">
+      <div
+        class="container max-w-full bg-[#1c0d08] flex flex-col md:flex-row h-full">
+        <div
+          class="left-container flex-1 p-8 md:p-24 flex flex-col justify-center">
+          <div class="title text-6xl md:text-8xl pb-12">Bistro Crafté Menu</div>
+          <div class="text text-2xl md:text-4xl pb-16">
+            Time to Relax and Enjoy Coffee
+          </div>
+          <a href="menu.html">
+            <button
+              class="bg-white text-[#1c0d08] px-6 py-3 rounded hover:bg-gray-200 transition">
+              Order Now
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="right-container flex-1 w-full p-8 md:p-24 h-full flex items-center">
+          <div
+            id="default-carousel"
+            class="relative w-full aspect-[4/3] md:aspect-[3/2]"
+            data-carousel="slide">
+            <!-- Carousel wrapper  -->
+            <div class="relative w-full h-full overflow-hidden rounded-lg">
+              <!-- Slide 1 -->
+              <div
+                class="block duration-700 ease-in-out h-full"
+                data-carousel-item>
+                <img
+                  src="assets/menu/sakura strawberry-latte.png"
+                  class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Slide 2 -->
+              <div
+                class="hidden duration-700 ease-in-out h-full"
+                data-carousel-item>
+                <img
+                  src="assets/menu/italian-pasta.png"
+                  class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Slide 3 -->
+              <div
+                class="hidden duration-700 ease-in-out h-full"
+                data-carousel-item>
+                <img
+                  src="assets/menu/crafte-brew.png"
+                  class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Slide 4 -->
+              <div
+                class="hidden duration-700 ease-in-out h-full"
+                data-carousel-item>
+                <img
+                  src="assets/menu/iced matcha-latte.png"
+                  class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Slide 5 -->
+              <div
+                class="hidden duration-700 ease-in-out h-full"
+                data-carousel-item>
+                <img
+                  src="assets/menu/blueberry-muffin.png"
+                  class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- Indicators and Controls -->
+            <div
+              class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white"
+                data-carousel-slide-to="0"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50"
+                data-carousel-slide-to="1"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50"
+                data-carousel-slide-to="2"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50"
+                data-carousel-slide-to="3"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full bg-white/50"
+                data-carousel-slide-to="4"></button>
+            </div>
+
+            <button
+              type="button"
+              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+                <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none">
+                  <path
+                    d="M5 1L1 5l4 4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+                <svg class="w-4 h-4 text-white" viewBox="0 0 6 10" fill="none">
+                  <path
+                    d="m1 9 4-4-4-4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact Us section -->
+    <section class="contact mx-5 my-16" id="contact">
+      <div
+        class="contact-container max-w-full flex flex-wrap justify-center items-center p-5 gap-10 items-stretch">
+        <!-- Left Section -->
+        <div
+          class="text-container bg-[#e6dace] w-full md:w-2/5 p-12 rounded-3xl text-[#1c0d08] flex flex-col justify-between">
+          <!-- items -->
+          <div class="info-title font-semibold text-2xl pb-2">
+            &#10003; Warm Ambiance
+          </div>
+          <div class="info-text text-lg text-justify pb-4 pl-6">
+            Cozy, welcoming spaces designed for comfort, conversation, and
+            community.
+          </div>
+
+          <div class="info-title font-semibold text-2xl pb-2">
+            &#10003; Passionate Craftsmanship
+          </div>
+          <div class="info-text text-lg text-justify pb-4 pl-6">
+            We’re driven by a genuine love for food, coffee, and hospitality.
+          </div>
+
+          <div class="info-title font-semibold text-2xl pb-2">
+            &#10003; Artisan Quality
+          </div>
+          <div class="info-text text-lg text-justify pb-4 pl-6">
+            Every cup of coffee and every dish is handcrafted with care, using
+            only the finest ingredients.
+          </div>
+
+          <div class="info-title font-semibold text-2xl pb-2">
+            &#10003; Locally Inspired
+          </div>
+          <div class="info-text text-lg text-justify pb-4 pl-6">
+            Supporting local producers and bringing fresh, quality products to
+            your table.
+          </div>
+
+          <div class="info-title font-semibold text-2xl pb-2">
+            &#10003; Signature Flavors
+          </div>
+          <div class="info-text text-lg text-justify pb-4 pl-6">
+            Home of the Crafté Brew and our best-selling Blueberry
+            Cheesecake—favorites you won’t find anywhere else.
+          </div>
+
+          <button
+            class="mt-4 bg-[#1c0d08] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#341a12] transition duration-300">
+            <a href="menu.html">See What's Brewing</a>
+          </button>
+        </div>
+
+        <!-- Right Section -->
+        <div
+          class="text-container bg-[#e6dace] w-full md:w-2/5 p-12 rounded-3xl text-[#1c0d08] flex flex-col justify-between">
+          <div class="text-title text-4xl text-center md:text-left pb-4">
+            Contact Us
+          </div>
+          <div class="contact-details text-lg space-y-2">
+            <div><strong>Address:</strong> 410 Ristretto St., Irish City</div>
+            <div><strong>Phone:</strong> 0986-007-1230</div>
+            <div>
+              <strong>Email:</strong>
+              <a href="#" class="underline">BistroCrafte@gmail.com</a>
+            </div>
+            <div>
+              <strong>Business Hours:</strong> Monday - Sunday, 1 PM - 3 AM
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <strong class="block text-lg mb-2">Map:</strong>
+            <div class="w-full">
+              <iframe
+                class="w-full h-64 rounded-md"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d123552.98311346422!2d121.00771125215846!3d14.597325275604748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1742992250171!5m2!1sen!2sph"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer
+      class="footer border-t-2 pt-5 text-[#1c0d08] flex items-center justify-center">
+      <div class="container p-5">
+        <div
+          class="top-container flex flex-col md:flex-row items-start justify-between gap-6 md:gap-10">
+          <div class="w-full md:w-1/3 max-w-xs">
+            <img src="assets/footer.png" class="w-full h-auto object-cover" />
+          </div>
+
+          <div class="links space-y-2">
+            <div><a href="#" class="hover:underline">Privacy Notice</a></div>
+            <div>
+              <a href="#" class="hover:underline"
+                >Consumer Health Privacy Notice</a
+              >
+            </div>
+            <div><a href="#" class="hover:underline">Terms of Use</a></div>
+            <div>
+              <a href="#" class="hover:underline">Cookie Preferences</a>
+            </div>
+          </div>
+
+          <div class="links space-y-2">
+            <div><a href="#" class="hover:underline">Tiktok</a></div>
+            <div><a href="#" class="hover:underline">Facebook</a></div>
+            <div><a href="#" class="hover:underline">Instagram</a></div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bottom-container border-t-2 mt-6 pt-4 text-sm text-center">
+          © 2025 Bistro Crafté. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="hidden fixed bottom-6 right-6 bg-[#1c0d08] text-white p-3 rounded-full shadow-lg hover:bg-[#341a12] transition duration-300 z-50">
+      ↑
+    </button>
+  </body>
+</html>

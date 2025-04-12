@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+/* navbar */
+.nav-container{
+/* background-color: #00f7ff; */
+font-family: "Montserrat", sans-serif;
+}
+.nav-container .title{
+  color: #1c0d08;
+  font-weight: 800;
+}
+.nav-container .navbar-element{
+  font-weight: 600;
+}
+
+/* home */
+.home .title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.home .title-content{
+  font-family: "Hind", sans-serif;
+}
+
+/* about */
+.about .title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.about .content p{
+  font-family: "Hind", sans-serif;
+}
+
+/* goals */
+.goals .title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.goals .text{
+  font-family: "Hind", sans-serif;
+}
+.goals .goals-container{
+  background-image: url(assets/goals.png);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.goals .mission, 
+.goals .vision{
+  transition: transform 0.8s ease, background-color 0.3s ease;
+}
+.goals .mission:hover,
+.goals .vision:hover{
+  transform: scale(1.05);
+}
+
+/* product overview */
+.overview .text-title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.overview .text{
+  font-family: "Hind", sans-serif;
+}
+.overview .text-menu{
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+}
+.overview .item-container{
+  overflow: hidden;
+}
+.overview img{
+  transition: transform 0.8s ease
+}
+.overview img:hover{
+  transform: scale(1.05);
+}
+
+/* menu preview */
+.preview{
+  font-family: "Montserrat", sans-serif;
+}
+.preview .title{
+  font-weight: 800;
+}
+.preview button{
+
+  font-weight: 600;
+}
+
+/* contact us */
+.contact .info-title,
+.contact .text-title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.contact .info-text,
+.contact .text-container .contact-details{
+  font-family: "Hind", sans-serif;
+}
+
+
+.contact .button{
+  color: rgb(48, 48, 48);
+  font-family: Poppins, sans-serif;
+  background-color: transparent;
+  border: 3px solid rgb(48, 48, 48);
+  transition: background-color 0.5s;
+}
+.contact .button:hover{
+  color: #f2f2f2;
+  background-color: rgb(48, 48, 48);
+  border: 3px solid transparent;
+}
+
+/* menu */
+.menu .menu-title{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.menu .title{
+  font-family: "Hind", sans-serif;
+}
+
+.menu .item-container{
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.menu .item-container:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.menu .order{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* footer */
+.footer{
+  font-family: "Montserrat", sans-serif;
+}
+.footer .links{
+  font-weight: 600;
+}
+
+/* scroll button */
+#scrollToTopBtn{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Crafté</title>
+    <!-- tailwind, flowbite link, and boxicon -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scrollButton.js"></script>
+    <script src="menu.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Website Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="nav-container border-b-2 shadow-sm">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo.png" class="h-14" alt="Flowbite Logo" />
+          <span
+            class="title self-center text-3xl font-semibold whitespace-nowrap"
+            >Bistro Crafté</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-stone-800 rounded-lg md:hidden hover:bg-[#e6dace] focus:outline-none focus:ring-2 focus:ring-[#1c0d08]"
+          aria-controls="navbar-default"
+          aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-[#1c0d08] rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent bg-[#e6dace]">
+            <li></li>
+            <li>
+              <a
+                href="index.html"
+                class="navbar-element block py-2 px-3 text-xl text-[#1c0d08] md:text-black rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-[#6f4323] md:p-0 md:dark:hover:text-[#6f4323] dark:hover:bg-[rgba(111,67,35,0.3)] md:dark:hover:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#about"
+                class="navbar-element block py-2 px-3 text-xl text-[#1c0d08] md:text-black rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-[#6f4323] md:p-0 md:dark:hover:text-[#6f4323] dark:hover:bg-[rgba(111,67,35,0.3)] md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="navbar-element block py-2 px-3 text-xl text-white bg-[#1c0d08] rounded-sm md:text-[#6f4323] md:bg-transparent md:p-0"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="navbar-element block py-2 px-3 text-xl text-[#1c0d08] md:text-black rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-[#6f4323] md:p-0 md:dark:hover:text-[#6f4323] dark:hover:bg-[rgba(111,67,35,0.3)] md:dark:hover:bg-transparent"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- menu section -->
+    <section class="menu">
+      <div
+        class="title text-[#1c0d08] m-w-full h-52 flex flex-col justify-center items-center mt-8">
+        <div class="menu-title text-5xl mb-8 pt-6">Bistro Crafté Menu</div>
+        <div class="w-full sm:w-3/4 md:w-1/2 text-center text-xl">
+          Explore our handcrafted selections made with passion and the finest
+          ingredients. From signature brews to beloved bites, every item is a
+          celebration of flavor and comfort.
+        </div>
+      </div>
+
+      <div
+        class="menu-container grid grid-cols-1 gap-x-6 gap-y-12 px-4 sm:px-6 md:px-64 pt-8 pb-16 sm:grid-cols-2 sm:grid-rows-auto md:grid-cols-4">
+        <!-- item 1 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/crafte-brew.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Crafté Brew
+            </h3>
+            <p class="text-lg text-gray-600">Hot/Iced</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;150
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Crafté Brew"
+              data-price="150">
+              <label
+                for="quantity1"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity1"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/blueberry-muffin.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Blueberry bliss
+            </h3>
+            <p class="text-lg text-gray-600">‎</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;120
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Blueberry bliss"
+              data-price="120">
+              <label
+                for="quantity2"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity2"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/iced matcha-latte.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Chill Zen Matcha
+            </h3>
+            <p class="text-lg text-gray-600">Hot/Iced</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;180
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Chill Zen Matcha"
+              data-price="180">
+              <label
+                for="quantity3"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity3"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 4 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/sakura strawberry-latte.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Blush Bloom Latte
+            </h3>
+            <p class="text-lg text-gray-600">Hot/Iced</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;185
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Blush Bloom Latte"
+              data-price="185">
+              <label
+                for="quantity4"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity4"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 5 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/italian-pasta.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Roma Twirl Pasta
+            </h3>
+            <p class="text-lg text-gray-600">‎</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;220
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Roma Twirl Pasta"
+              data-price="220">
+              <label
+                for="quantity5"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity5"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 6 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/caramel-macchiato.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Caramel Macchiato
+            </h3>
+            <p class="text-lg text-gray-600">‎</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;190
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Caramel Macchiato"
+              data-price="190">
+              <label
+                for="quantity6"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity6"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 7 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/crafte-americano.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Midnight Roast
+            </h3>
+            <p class="text-lg text-gray-600">Hot/Iced</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;140
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Midnight Roast"
+              data-price="140">
+              <label
+                for="quantity7"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity7"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 8 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/crafte-espresso.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Bistro Bold Shot
+            </h3>
+            <p class="text-lg text-gray-600">Hot/Iced</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;130
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Bistro Bold Shot"
+              data-price="130">
+              <label
+                for="quantity8"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity8"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 9 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/vanilla-frappucino.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Frosted Vanilla Dream
+            </h3>
+            <p class="text-lg text-gray-600">‎</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;175
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Frosted Vanilla Dream"
+              data-price="175">
+              <label
+                for="quantity9"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity9"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+        <!-- item 10 -->
+        <div
+          class="item-container cursor-pointer flex flex-col bg-white rounded-xl p-8 shadow-md">
+          <div class="h-48 overflow-hidden rounded-xl">
+            <img
+              src="assets/menu/garlic-bread.png"
+              class="w-full h-full object-cover" />
+          </div>
+
+          <div class="text-container mt-4">
+            <h3 class="text-item font-bold text-2xl text-[#1c0d08]">
+              Golden Garlic Bread
+            </h3>
+            <p class="text-lg text-gray-600">‎</p>
+            <p class="text-price text-2xl font-semibold mt-2 text-[#1c0d08]">
+              &#8369;60
+            </p>
+            <form
+              class="mt-4 space-y-2"
+              data-name="Golden Garlic Bread"
+              data-price="60">
+              <label
+                for="quantity10"
+                class="block text-sm font-medium text-gray-600"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantity10"
+                name="quantity"
+                min="1"
+                class="w-full border border-gray-300 rounded px-3 py-1" />
+              <input
+                type="submit"
+                onclick="updateOrder()"
+                value="Add to Order"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300 cursor-pointer" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="order p-5 mb-8">
+        <div
+          class="order-container block w-full max-w-4xl mx-auto bg-[#e6dace] rounded-xl p-16 shadow-md">
+          <div
+            class="title text-[#1c0d08] m-w-full flex flex-col justify-center items-center">
+            <div class="menu-title text-5xl mb-8">Order Summary</div>
+          </div>
+
+          <div
+            class="ordered-items-container w-full flex flex-col items-center">
+            <ul
+              id="order-list"
+              class="list-disc w-[80%] text-left text-lg text-[#1c0d08] space-y-2 mb-6">
+              <!-- Example placeholder -->
+              <!-- <div>Crafté Brew (Qty. 2) - ₱240</div> -->
+            </ul>
+
+            <!-- Total amount display -->
+            <div
+              id="total-amount"
+              class="text-2xl font-semibold text-[#1c0d08] mb-6">
+              Total: ₱0
+            </div>
+
+            <!-- payment -->
+            <div class="w-[80%]">
+              <label for="money-input" class="block text-xl text-[#1c0d08] mb-2"
+                >Enter Payment:</label
+              >
+              <input
+                type="number"
+                id="money-input"
+                placeholder="Enter Amount Here"
+                class="w-full border border-gray-300 rounded px-4 py-2 mb-4" />
+
+              <button
+                onclick="pay()"
+                class="w-full bg-[#1c0d08] text-white py-2 rounded hover:bg-[#341a12] transition duration-300">
+                Pay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer
+      class="footer border-t-2 pt-5 text-[#1c0d08] flex items-center justify-center">
+      <div class="container p-5">
+        <div
+          class="top-container flex flex-col md:flex-row items-start justify-between gap-6 md:gap-10">
+          <div class="w-full md:w-1/3 max-w-xs">
+            <img src="assets/footer.png" class="w-full h-auto object-cover" />
+          </div>
+
+          <div class="links space-y-2">
+            <div><a href="#" class="hover:underline">Privacy Notice</a></div>
+            <div>
+              <a href="#" class="hover:underline"
+                >Consumer Health Privacy Notice</a
+              >
+            </div>
+            <div><a href="#" class="hover:underline">Terms of Use</a></div>
+            <div>
+              <a href="#" class="hover:underline">Cookie Preferences</a>
+            </div>
+          </div>
+
+          <div class="links space-y-2">
+            <div><a href="#" class="hover:underline">Tiktok</a></div>
+            <div><a href="#" class="hover:underline">Facebook</a></div>
+            <div><a href="#" class="hover:underline">Instagram</a></div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bottom-container border-t-2 mt-6 pt-4 text-sm text-center">
+          © 2025 Bistro Crafté. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="hidden fixed bottom-6 right-6 bg-[#1c0d08] text-white p-3 rounded-full shadow-lg hover:bg-[#341a12] transition duration-300 z-50">
+      ↑
+    </button>
+  </body>
+</html>
